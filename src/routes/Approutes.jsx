@@ -14,52 +14,49 @@ import Planner from "../components/Planner";
 
 
 function Approutes() {
-  const router = createBrowserRouter([
-{
-    path:"/",
-    element:<Navbar />,
-    children:[
-        {
+  const router = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: <Navbar />,
+        children: [
+          {
             path:"",
-            element:<Home/>
-        },
-        {
-    path:"task",
-    element:<Task />,
-        },
-        {
-            path:"cart",
-            element:<Todo />
-        },
-        {
-path:"weather",
-element:<App/>
-        },
-        {
-            path:"promodo",
-            element:<Timmer />
-        },
-        {
-            path:"quotes",
-            element:<Quotes />
-        },
-        {
-            path:"planner",
-            element:<Planner />
-        }
-    
+            element: <Home />,
+          },
+          {
+            path: "task",
+            element: <Task />,
+          },
+          {
+            path: "cart",
+            element: <Todo />,
+          },
+          {
+            path: "weather",
+            element: <App />,
+          },
+          {
+            path: "promodo",
+            element: <Timmer />,
+          },
+          {
+            path: "quotes",
+            element: <Quotes />,
+          },
+          {
+            path: "planner",
+            element: <Planner />,
+          },
+        ],
+      },
+    ],
+    {
+      basename: "/productivity_app",
+    }
+  );
 
-    ]
-},{
-  basename: "/productivity_app",
-}
-])
-
-
-
-
-
-return <RouterProvider  router={router}/>
+  return <RouterProvider router={router} />;
 }
 
-export default Approutes
+export default Approutes;

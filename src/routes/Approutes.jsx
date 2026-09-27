@@ -50,6 +50,8 @@ element:<App/>
     
 
     ]
+},{
+  basename: "/productivity_app",
 }
 ])
 

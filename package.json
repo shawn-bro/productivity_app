@@ -1,7 +1,7 @@
 {
   "name": "weather",
-  "homepage": "https://shawn-bro.github.io/productivity_app/",
-  "private": true,
+  "homepage": "https://shawn-bro.github.io/productivity_app",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy":"npm run build",
-    "deploy":"gh-pages -d dist"
+    "deploy":"gh-pages -d build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
